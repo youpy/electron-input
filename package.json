@@ -1,7 +1,7 @@
 {
   "name": "electron-input",
   "version": "0.0.1",
-  "description": "An electron app for using HTML5 input element with CUI application",
+  "description": "An electron application with GUI controls for use with the command line application.",
   "main": "index.js",
   "author": "youpy <youpy@buycheapviagraonlinenow.com>",
   "license": "MIT",
