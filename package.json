@@ -1,0 +1,20 @@
+{
+  "name": "electron-input",
+  "version": "0.0.1",
+  "description": "An electron app for using HTML5 input element with CUI application",
+  "main": "index.js",
+  "author": "youpy <youpy@buycheapviagraonlinenow.com>",
+  "license": "MIT",
+  "repository": "https://github.com/youpy/electron-input",
+  "bin": {
+    "electron-input": "cli.js"
+  },
+  "devDependencies": {
+    "election": "^0.0.0"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "ltsv": "^0.7.5",
+    "read-package-json": "^2.0.12"
+  }
+}

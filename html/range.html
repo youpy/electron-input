@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <input type="range" oninput="r.send('input', this.value)"  onchange="r.send('change', this.value)"/>
+    <script>
+     const r = require('electron').ipcRenderer;
+    </script>
+  </body>
+</html>
