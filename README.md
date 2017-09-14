@@ -28,5 +28,5 @@ $ electron-input -h
 
 ## Supported input types
 
-- [range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
-- [color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
+- [x] [range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+- [x] [color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
