@@ -73,10 +73,6 @@ json-parse-better-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.1.tgz#50183cd1b2d25275de069e9e71b467ac9eab973a"
 
-ltsv@^0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/ltsv/-/ltsv-0.7.5.tgz#5d5dc2cbdf0ce0acb1de2e63a7744d969d26dd69"
-
 minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
