@@ -1,6 +1,6 @@
 {
   "name": "electron-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An electron application with GUI controls for use with the command line application.",
   "main": "index.js",
   "author": "youpy <youpy@buycheapviagraonlinenow.com>",
@@ -10,9 +10,9 @@
     "electron-input": "cli.js"
   },
   "devDependencies": {
+    "electron": "^1.7.6"
   },
   "dependencies": {
-    "electron": "^1.7.6",
     "commander": "^2.11.0",
     "read-package-json": "^2.0.12"
   }
