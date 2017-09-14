@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form onsubmit="r.send('submit', target.value); return false">
+      <input id="target">
+      <input type="submit" />
+    </form>
+    <script>
+     const electron = require('electron');
+     const r = electron.ipcRenderer;
+     const target = document.getElementById('target');
+
+     window.addEventListener('load', () => {
+       r.on('init', (event, message) => {
+         console.log(111111);
+
+         target.type = message.type;
+         target.setAttribute('type', message.type);
+         message.eventNames.forEach(eventName => {
+           if (eventName === 'submit') {
+             return;
+           }
+
+           target.addEventListener(eventName, (e) => {
+             r.send(eventName, target.value);
+             e.preventDefault();
+           });
+         });
+       });
+     });
+    </script>
+  </body>
+</html>

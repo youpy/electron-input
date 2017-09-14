@@ -9,19 +9,18 @@ var inputTypes = {
   range: {
     width: 200,
     height: 100,
-    eventNames: ['change', 'input']
+    eventNames: ['submit', 'change', 'input']
   },
   color: {
     width: 250,
     height: 70,
-    eventNames: ['change']
+    eventNames: ['submit', 'change']
   }
 };
 
 var log = (type, data) => {
   console.log('event[' + type + ']: ' + JSON.stringify(data));
 }
-
 
 var run = (type, program) => {
   var title = program.title || type;
@@ -44,11 +43,18 @@ var run = (type, program) => {
       width: inputType.width,
       height: inputType.height
     });
-    win.loadURL('file://' + __dirname + '/html/' + inputTypeName + '.html');
+    win.loadURL('file://' + __dirname + '/html/main.html');
     win.setTitle(title);
 
     win.on('closed', function() {
       log('closed', {});
+    });
+
+    win.webContents.on('did-finish-load', () => {
+      win.webContents.send('init', {
+        type: inputTypeName,
+        eventNames: inputType.eventNames
+      });
     });
 
     inputType.eventNames.forEach(eventName => {
