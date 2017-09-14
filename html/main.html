@@ -15,8 +15,6 @@
 
      window.addEventListener('load', () => {
        r.on('init', (event, message) => {
-         console.log(111111);
-
          target.type = message.type;
          target.setAttribute('type', message.type);
          message.eventNames.forEach(eventName => {
