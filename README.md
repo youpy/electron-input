@@ -7,7 +7,7 @@ It is inspired by [cocoaDialog](http://mstratman.github.io/cocoadialog/).
 ## Install
 
 ```
-$ npm i -g electron-input
+$ npm i -g electron electron-input
 ```
 
 ## Usage
